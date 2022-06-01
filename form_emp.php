@@ -44,7 +44,6 @@
                                     <td><a href="#" class="btn btn-info btn-sm">รายละเอียด</a></td>
                                     <td><a href="formedit_emp.php?employee_id=<?php echo $row['employee_id']; ?> " class="btn btn-warning btn-sm">แก้ไข</a></td>
                                     <td><a href="#" class="btn btn-ganger btn-sm">ลบ</a></td>
-
                                 </tr>
                             <?php } ?>
                         </tbody>
