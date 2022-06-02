@@ -10,7 +10,7 @@
 </head>
 <?php
 include("config/connect_db.php");
-$customer_id = $_GET['employee_id'];
+$employee_id = $_GET['employee_id'];
 $stmt = $conn->prepare("SELECT * FROM employee WHERE employee_id = :employee_id");
 $stmt->execute([':employee_id' => $employee_id]);
 $row1 = $stmt->fetch();
