@@ -25,31 +25,31 @@ $row1 = $stmt->fetch();
                     <div class="mb-2">
                         <label for="name_emp" class="col-sm-2 col-form-label"> ชื่อ:</label>
                         <div class="col-sm-10">
-                            <input class="form-control" type="text" name="name_emp" id="name_ct" value="<?= $row1['name_ct'] ?>">
+                            <input class="form-control" type="text" name="name_emp" id="name_emp" value="<?= $row1['name_emp'] ?>">
                         </div>
                     </div>
                     <div class="mb-2">
-                        <label for="surname_ct" class="col-sm-2 col-form-label"> นามสกุล:</label>
+                        <label for="surname_emp" class="col-sm-2 col-form-label"> นามสกุล:</label>
                         <div class="col-sm-10">
-                            <input class="form-control" type="text" name="surname_ct" id="surname_ct" value="<?= $row1['surname_ct'] ?>">
+                            <input class="form-control" type="text" name="surname_emp" id="surname_emp" value="<?= $row1['surname_emp'] ?>">
                         </div>
                     </div>
                     <div class="mb-2">
-                        <label for="phone_ct" class="col-sm-2 col-form-label"> เบอร์โทร:</label>
+                        <label for="phone_emp" class="col-sm-2 col-form-label"> เบอร์โทร:</label>
                         <div class="col-sm-10">
-                            <input type="text" name="phone_ct" class="form-control">
+                            <input type="text" name="phone_emp" class="form-control">
                         </div>
                     </div>
                     <div class="mb-2">
-                        <label for="email_ct" class="col-sm-2 col-form-label"> อีเมล:</label>
+                        <label for="email_emp" class="col-sm-2 col-form-label"> อีเมล:</label>
                         <div class="col-sm-10">
-                            <input type="text" name="email_ct" class="form-control">
+                            <input type="text" name="email_emp" class="form-control">
                         </div>
                     </div>
                     <div class="mb-2">
-                        <label for="adress_ct" class="col-sm-2 col-form-label"> ที่อยู่:</label>
+                        <label for="adress_emp" class="col-sm-2 col-form-label"> ที่อยู่:</label>
                         <div class="col-sm-10">
-                            <input type="text" name="adress_ct" class="form-control">
+                            <input type="text" name="adress_emp" class="form-control">
                         </div>
                     </div>
                     <button type="submit" class="btn btn-success">แก้ไขข้อมูล</button>
