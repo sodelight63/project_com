@@ -31,7 +31,7 @@ $row1 = $stmt->fetch();
           <div class="mb-2">
             <label for="surname_ct" class="col-sm-2 col-form-label"> นามสกุล:</label>
             <div class="col-sm-10">
-              <input class="form-control" type="text" name="surname_ct" id="surname_ct" value="<?=$row1['surname_ct']?>">
+              <input class="form-control" type="text" name="surname_ct" id="surname_ct" value="<?= $row1['surname_ct'] ?>">
             </div>
           </div>
           <div class="mb-2">
