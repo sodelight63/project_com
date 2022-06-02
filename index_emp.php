@@ -13,19 +13,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12"><br>
-                <h3>รายการข้อมูลพนักงาน<a href="formInsert_emp.php" class="btn btn-success float-end">+เพิ่มข้อมูล</a>
-                    <table class="table table-striped  table-hover table-responsive table-bordered">
+                <h3>รายการข้อมูลพนักงาน<a href="formInsert_emp.php" class="btn btn-success float-end">+เพิ่มข้อมูล</a></h3>
+                    <table class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th width="5%">รหัสพนักงาน</th>
-                                <th width="25%">ชื่อ</th>
-                                <th width="25%">นามสกุล</th>
-                                <th width="25%">เบอร์โทร</th>
-                                <th width="8%">อีเมล</th>
-                                <th width="8%">ที่อยู่</th>
-                                <th width="8%">รายละเอียด</th>
-                                <th width="5%">แก้ไข</th>
-                                <th width="5%">ลบ</th>
+                                <th>รหัสพนักงาน</th>
+                                <th>ชื่อ</th>
+                                <th>นามสกุล</th>
+                                <th>เบอร์โทร</th>
+                                <th>อีเมล</th>
+                                <th>ที่อยู่</th>
+                                <th>รายละเอียด</th>
+                                <th>แก้ไข</th>
+                                <th>ลบ</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -40,6 +40,7 @@
                                     <td><?= $row['name_emp']; ?></td>
                                     <td><?= $row['surname_emp']; ?></td>
                                     <td><?= $row['phone_emp']; ?></td>
+                                    <td><?= $row['email_emp']; ?></td>
                                     <td><?= $row['adress_emp']; ?></td>
                                     <td><a href="#" class="btn btn-info btn-sm">รายละเอียด</a></td>
                                     <td><a href="formedit_emp.php?employee_id=<?php echo $row['employee_id']; ?> " class="btn btn-warning btn-sm">แก้ไข</a></td>
