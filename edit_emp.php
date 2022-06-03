@@ -21,7 +21,7 @@ $row1 = $stmt->fetch();
         <div class="row">
             <div class="col-md-4"> <br>
                 <h4>ฟอร์มแก้ไขข้อพนักงาน</h4>
-                <form action="editform_db.php" method="post">
+                <form action="editform_emp.php" method="post">
                     <div class="mb-2">
                         <label for="name_emp" class="col-sm-2 col-form-label"> ชื่อ:</label>
                         <div class="col-sm-10">

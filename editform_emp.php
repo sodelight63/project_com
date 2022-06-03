@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>แก้ไขข้อมูลลูกค้า</title>
+</head>
+<?php
+include("config/connect_db.php");
+$employee_id = $_GET['employee_id'];
+$stmt = $conn->prepare("SELECT * FROM employee WHERE employee_id = :employee_id");
+$stmt->execute([':employee_id' => $employee_id]);
+$row1 = $stmt->fetch();
+?>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"> <br>
+        <h4>ฟอร์มแก้ไขข้อมูลลูกค้า</h4>
+        <form action="edit_emp.php" method="post">
+          <div class="mb-2">
+            <label for="name_emp" class="col-sm-2 col-form-label"> ชื่อ:</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" name="name_emp" id="name_emp" value="<?= $row1['name_emp'] ?>">
+            </div>
+          </div>
+          <div class="mb-2">
+            <label for="surname_emp" class="col-sm-2 col-form-label"> นามสกุล:</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" name="surname_emp" id="surname_emp" value="<?=$row1['surname_emp']?>">
+            </div>
+          </div>
+          <div class="mb-2">
+            <label for="phone_emp" class="col-sm-2 col-form-label"> เบอร์โทร:</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" name="phone_emp" id="phone_emp" value="<?=$row1['phone_emp']?>" >
+            </div>
+          </div>
+          <div class="mb-2">
+            <label for="email_emp" class="col-sm-2 col-form-label"> อีเมล:</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" name="email_emp" id="email_emp" value="<?=$row1['email_emp']?>" >
+            </div>
+          </div>
+          <div class="mb-2">
+            <label for="adress_emp" class="col-sm-2 col-form-label"> ที่อยู่:</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" name="adress_emp" id="adress_emp" value="<?=$row1['adress_emp']?>">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success">แก้ไขข้อมูล</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
